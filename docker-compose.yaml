@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  nexus-cli:
+    image: tinnguyen1602/nexus-cli:latest
+    container_name: nexus-cli
+    command: ["start", "--headless", "--node-id", "6564287"]
+    restart: unless-stopped
